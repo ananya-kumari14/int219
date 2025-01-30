@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORMS</title>
+</head>
+<body>
+    <form action="" method="post" >
+        <label for="username">Enter Name:</label>
+        <input type="text" name="username" id="username" size="30" maxlenght="5" placeholder="'Enter Name" value="ria"><br>
+        <label for="pass">Enter Password:</label>
+        <input type="password" name="pass" id="pass" placeholder="'Enter password"><br><br>
+
+        <label for="email">Enter Email:</label>
+        <input type="email" name="email1" id="email1" required>
+        <br><br>
+        <label for="review">write a review</label><br>
+        <textarea name="review" id="review" row="6" cols="40"></textarea>
+        <br><br>
+        <label for="hobby">choose your hobby:</label><br>
+        <input type="checkbox" name="hobby" id="hobby" value="cook">Cooking
+        <input type="checkbox" name="hobby" id="hobby" value="journal">reading
+        <input type="checkbox" name="hobby" id="hobby" value="sing">singing
+        <br><br>
+       
+
+        <br><br><label for="pro">select your program</label><br>
+<!-- by clicking only the box of check we can select the option -->
+
+        <!-- <input type="radio" name="pro" id="pro">b.tech 
+        <input type="radio" name="pro" id="pro">BCA
+        <input type="radio" name="pro" id="pro">BPT -->
+
+
+
+        <!-- <by clicking just the text option we can select the option -->
+        <input type="radio" name="pro" id="btech" value="btech">
+        <label for="btech">B.Tech</label>
+        <input type="radio" name="pro" id="bca" value="BCA">
+        <label for="bca">BCA</label>
+        <input type="radio" name="pro" id="bb" value="BPT">
+        <label for="bb" >BPT</label>
+<br><br>
+
+        <label for="statesel">select state:</label>
+        <!-- selects only one -->
+        <select name="statesel" id="statesel" > 
+        <!-- <select name="statesel" id="statesel" size="3" multiple> multiple option select -->
+            <option value="choosest">choose state</option>
+            <option value="punjab">Punjab</option>
+            <option value="kr">Kerala</option>
+            <option value="bihar" selected>Bihar</option>
+            <option value="delhi">Delhi</option>
+        </select>
+        <br><br>
+
+
+        <!-- choosing file -->
+
+         <label for="filesel">Choose File</label>
+         <input type="file" name="filesel" id="filesel">
+
+
+<br><br>
+        <input type="submit" name="submit form" id="submit form" value="submit form">
+        <br><br>
+        <input type="reset" name="resetform" id="resetform" value="reset form">
+
+        <input type="image" name="imagesel" id="imagesel" src="image/submit copy.jpeg" width="100" height="40">
+
+    </form>
+    <!-- get can use 300 character -->
+
+</body>
+</html>

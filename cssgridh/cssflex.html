@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: bisque;
+            border:5px solid purple;
+            /* padding:40px; */
+            /* side by side */
+            display:flex;
+            /* allign items horizontally */
+            justify-content:flex-start;
+            /* alligns items vertically flex-start-->top,flex-end-->bottom*/
+            align-items: flex-start;
+            /* height:300px; */
+            min-height:400px;
+            flex-direction:row;
+            flex-wrap:nowrap;
+            /* column-gap: 20px; */
+            row-gap: 200px;
+        
+
+        }
+        .item{
+            background-color: goldenrod;
+            width:60px;
+            height:60px;
+            border:2px red solid;
+            padding:50px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            /* flex-shrink:by default is 1 */
+            /* flex-shrink:1; */
+            /* flex-rrow is by default 0 */
+            /* flex-grow:1; */
+        }
+        #i1{
+            /* display:flex;
+            /* flex-grow:5; */
+            /* flex-shrink:5; */
+            /* align-self:flex-start; */ 
+            /* margin-right: auto; */
+        }
+/* landscape orentition of screen */
+        @media(max-width:500px){
+            .container{
+                /* by default is 1 shrink */
+                flex-wrap:wrap;
+                background-color: green;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="i1">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+        <div class="item">item4</div>
+        <div class="item">item5</div>
+        <div class="item">item6</div>
+        <div class="item">item7</div>
+        <div class="item">item8</div>
+
+
+
+        <!-- command
+            1.git init   (initialization);
+            2.git status (track) -->
+            commit(final saving)but brefore that put in staging area
+            3.git add --a
+        </div>
+</body>
+</html>

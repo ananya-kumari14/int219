@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 >frontend class</h1>
+    <h2 >learning css</h2>
+    <h3 >learning css</h3>
+    <h4 class="c1">learning css</h4>
+    <h5 class="c1">learning css</h5>
+    <h6>learning css</h6>
+    <p id="id1">para1</p>
+    <p id="id2">para2</p>
+    <!-- types of css selectors
+    1. type
+    2.attribute
+    3.id
+    4.class selector
+    5.universal
+    6.pseudo
+    7.combinator selector -->
+
+    <!-- type selector -->
+     <!-- fetching element by using its tag name -->
+      <style>
+        h1{
+            color:orange;
+        }
+        h3{
+            color:red;
+            background-color: yellow;
+            font-family: 'gill sans', 'gill sans mt',calibri, 'Trebuchet Ms',sans-serif;
+            font-style:italic
+        }
+        /* p{
+            color:red;
+
+        } */
+
+        /* id selector */
+        #id1{
+            color:red;
+
+        } 
+        #id2{
+            color:green;
+
+        } 
+        /* selecting multiple heading and changing color */
+        /* class selector */
+        .c1{
+            color:navy
+        }
+        /* universal selector */
+        /* *{
+            color:darkmagenta;
+        } */
+
+        /* atribute selector */
+        a[href="htmllList.html"]{
+            background-color:grey;
+        }
+        /* psuedo selector */
+        h4:hover{
+            color:red;
+            background-color: yellow;
+            font-family: 'gill sans', 'gill sans mt',calibri, 'Trebuchet Ms',sans-serif;
+            font-style:italic
+        }
+
+        .d1 p{
+            background-color:aqua ;
+        }
+        h1,p,h3{
+            color:brown;
+        }
+
+
+      </style>
+      <a href="htmllList.html">html lists</a>
+      <div class="d1"><p>this is para in div</p></div>
+      <p>this is para</p>
+
+
+      
+    
+</body>
+</html>
